@@ -21,5 +21,9 @@ node_modules/
 dist/
 .svelte-kit/
 
+# Frontend canister build output
+nft_marketplace_frontend/dist/
+nft_marketplace_frontend/node_modules/
+
 # environment variables
 .env
