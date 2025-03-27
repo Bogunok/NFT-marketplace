@@ -51,6 +51,8 @@ import ConnectWalletPage from './pages/ConnectWalletPage';
 import NavigationBar from './components/NavigationBar';
 import NavBar from './components/NavBar'
 import './App.css'; 
+import './index.css';
+
 
 function App() {
   return (

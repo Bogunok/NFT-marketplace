@@ -36,7 +36,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   }
   
   /* Navigation Bar Styles (consistent with NavigationBar.css) */
-  .navigation-bar {
+  /* .navigation-bar {
     background-color: #f8f9fa;
     padding: 15px 20px;
     border-bottom: 1px solid #dee2e6;
@@ -49,8 +49,8 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
     display: flex;
     gap: 20px;
     justify-content: center; /* Center the navigation links */
-  }
-  
+  /* } */
+/*   
   .navigation-bar li a {
     text-decoration: none;
     color: #333;
@@ -58,9 +58,9 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   }
   
   .navigation-bar li a:hover {
-    color: #007bff; /* Blue hover color */
+    color: #007bff; /* Blue hover color 
   }
-  
+   */ */*/
   /* Button Styles (trying to be consistent with previous button colors) */
   button {
     padding: 10px 20px;
@@ -107,7 +107,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
     background-color: #e0a800;
   }
   
-  /* Link Styles */
+  /* Link Styles
   a {
     color: #007bff;
     text-decoration: none;
@@ -116,7 +116,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   a:hover {
     text-decoration: underline;
   }
-  
+   */
   /* Form Styles (basic form styling for consistency) */
   .form-group {
     margin-bottom: 15px;
