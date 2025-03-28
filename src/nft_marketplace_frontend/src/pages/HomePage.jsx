@@ -22,7 +22,7 @@ function HomePage() {
   return (
     <div className="home-page">
       <section className="popular-nfts">
-        <h2>Popular NFTs</h2>
+      <h2 class="text-4xl font-extrabold">Popular NFTs</h2>
         <div className="nft-list">
           {popularNFTs.map(nft => (
             <div key={nft.id} className="nft-card">
@@ -36,7 +36,7 @@ function HomePage() {
       </section>
 
       <section className="new-arrivals">
-        <h2>New Arrivals</h2>
+      <h2 class="text-4xl font-extrabold ">New Arrivals</h2>
         <div className="nft-list">
           {newArrivals.map(nft => (
             <div key={nft.id} className="nft-card">

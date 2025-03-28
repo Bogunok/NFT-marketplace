@@ -1,8 +1,10 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom'
+import "./navigationBar.css"
 const navigation = [
     { name: 'Home', href: '/' },
     { name: 'All NFTs', href: '/nfts' },
@@ -20,22 +22,47 @@ const navigation = [
     const location = useLocation() // Отримуємо поточний шлях
   
     return (
-      <Disclosure as="nav" className="bg-gray-800">
-        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <Disclosure as="nav" className="bg-[rgba(31,41,55,0.5)] backdrop-blur-md">
+        <div className="mx-auto max-w-7xl px-2 sm:px-6 ">
           <div className="relative flex h-16 items-center justify-between">
-            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <div className="flex shrink-0 items-center">
+                <h1 className="text-3xl font-bold text-white">NFT-marketplace</h1>
+              </div>
+            {/* <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
                 <span className="absolute -inset-0.5" />
                 <span className="sr-only">Open main menu</span>
                 <Bars3Icon aria-hidden="true" className="block size-6 group-data-open:hidden" />
                 <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
               </DisclosureButton>
-            </div>
+            </div> */}
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="flex shrink-0 items-center">
+              <ul className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/nfts">All NFTs</Link>
+                </li>
+                <li>
+                  <Link to="/profile">Profile</Link>
+                </li>
+                <li>
+                  <Link to="/mint">Mint NFT</Link>
+                </li>
+                <li>
+                  <Link to="/sell">Sell NFT</Link>
+                </li>
+                <li>
+                  <Link to="/connect-wallet">Connect Wallet</Link>
+                </li>
+                    {/* You can add more links here as needed */}
+              </ul>
+
+              {/* <div className="flex shrink-0 items-center">
                 <h1 className="text-3xl font-bold text-white">NFT-marketplace</h1>
-              </div>
-              <div className="hidden sm:ml-6 sm:block">
+              </div> */}
+              {/* <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
                   {navigation.map((item) => {
                   const isActive = location.pathname.startsWith(item.href) // Змінено!
@@ -62,8 +89,8 @@ const navigation = [
                       </Link>
                     )
                   })}
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             {/* <button

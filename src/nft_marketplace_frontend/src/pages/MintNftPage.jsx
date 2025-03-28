@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import '../styles/mintNftPage.css';
+import {backend} from '../backend'
+// import { Principal } from "@dfinity/principal";
 
 function MintNftPage() {
   const [name, setName] = useState('');
@@ -19,6 +21,7 @@ function MintNftPage() {
   const handleAssetChange = (event) => {
     setAsset(event.target.files[0]);
   };
+  // const [tokenId, setTokenId] = useState<number | null>(null);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -30,8 +33,11 @@ function MintNftPage() {
 
   return (
     <div className="mint-nft-page">
-      <h1>Mint New NFT</h1>
-      <form onSubmit={handleSubmit}>
+      <div className="flex justify-center mt-7">
+        <h1 className="text-4xl font-extrabold">Mint New NFT</h1>
+      </div>
+      
+      <form onSubmit={handleSubmit} class="max-w-sm mx-auto bg-white p-8 rounded-md">
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
@@ -59,7 +65,9 @@ function MintNftPage() {
             required
           />
         </div>
-        <button type="submit">Mint NFT</button>
+        <button type="submit" class="text-white bg-gray-800 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Mint NFT</button>
+        {/* <h1>NFT Minting</h1>
+        {tokenId !== null && <p>Minted NFT ID: {tokenId}</p>} */}
       </form>
     </div>
   );

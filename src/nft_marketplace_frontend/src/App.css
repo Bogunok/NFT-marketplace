@@ -1,6 +1,7 @@
 /* Basic Reset and Font */
 @import "tailwindcss";
 
+
 body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
     padding: 0;
@@ -11,8 +12,9 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    background-color: #f8f8f8; /* Light grey background */
-    color: #333; /* Dark grey text */
+    background: rgb(84,110,243);
+    background: radial-gradient(circle, rgba(84,110,243,1) 0%, rgba(67,63,185,1) 37%, rgba(67,62,183,1) 38%, rgba(64,3,113,1) 100%);
+    /* color: #333; Dark grey text */
   }
   
   .App {

@@ -20,6 +20,8 @@
     border-radius: 8px;
     width: 200px;
     text-align: center;
+    background-color:rgb(216, 214, 214);
+
   }
   
   .nft-card img {
@@ -52,4 +54,7 @@
     padding: 8px 15px;
     border-radius: 20px;
     font-size: 0.9em;
+  }
+  h2{
+    color: rgb(216, 214, 214);
   }

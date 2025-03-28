@@ -5,9 +5,12 @@ import './navigationBar.css';
 function NavigationBar() {
   return (
     <nav className="navigation-bar">
+      <div>
+        <h1 class="text-3xl font-bold text-white bg-yellow">NFT-marketplace</h1>
+      </div>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+            <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/nfts">All NFTs</Link>
